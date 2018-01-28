@@ -1,0 +1,2 @@
+# OOPOTOPARKOTOMASYONUDBSiz
+DatabaseKullanilmiyo
