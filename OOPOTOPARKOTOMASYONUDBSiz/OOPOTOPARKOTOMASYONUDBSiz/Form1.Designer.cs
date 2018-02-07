@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BtnEkle = new System.Windows.Forms.Button();
             this.chkAbone = new System.Windows.Forms.CheckBox();
@@ -46,9 +47,12 @@
             this.lblPlaka = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.çıkısYapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -142,6 +146,7 @@
             // 
             // lstAraclar
             // 
+            this.lstAraclar.ContextMenuStrip = this.contextMenuStrip1;
             this.lstAraclar.FormattingEnabled = true;
             this.lstAraclar.Location = new System.Drawing.Point(6, 19);
             this.lstAraclar.Name = "lstAraclar";
@@ -173,6 +178,7 @@
             this.BtnGuclukRapor.TabIndex = 4;
             this.BtnGuclukRapor.Text = "Gunlük Satıs Raporu";
             this.BtnGuclukRapor.UseVisualStyleBackColor = true;
+            this.BtnGuclukRapor.Click += new System.EventHandler(this.BtnGuclukRapor_Click);
             // 
             // lblUcret
             // 
@@ -228,6 +234,20 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Plaka";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.çıkısYapToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(122, 26);
+            // 
+            // çıkısYapToolStripMenuItem
+            // 
+            this.çıkısYapToolStripMenuItem.Name = "çıkısYapToolStripMenuItem";
+            this.çıkısYapToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.çıkısYapToolStripMenuItem.Text = "Çıkıs Yap";
+            this.çıkısYapToolStripMenuItem.Click += new System.EventHandler(this.Cikis_yap);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,6 +264,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -268,6 +289,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BtnGuclukRapor;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem çıkısYapToolStripMenuItem;
     }
 }
 
